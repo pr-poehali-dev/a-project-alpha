@@ -125,7 +125,7 @@ const Index = () => {
       <main className="max-w-6xl mx-auto px-4 py-6 space-y-6">
         {view === "list" ? (
           <>
-            <StatsBar orders={orders} />
+            <StatsBar orders={orders} activeFilter={statusFilter} onFilterChange={setStatusFilter} />
 
             <div className="flex flex-col sm:flex-row gap-3">
               <div className="relative flex-1">
